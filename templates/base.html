@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>
+        {% block title %}
+        Интернет магазин
+        {% endblock %}
+    </title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <div style="margin: 20px; ">
+                <img src="https://www.coupert.com/mimg/merimg/s_fonehouse.co.uk.png?v=v4.9712381" alt="Логотип">
+                </div>
+            </div>
+            <div class="col-10">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Главная страница</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about/">О Нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacts/">Наши контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/clothes/">Одежда</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shoes/">Обувь</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/jacket/">Куртки</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-10">
+                {% block content %}
+                    Страницы не заполнена
+                {% endblock %}
+            </div>
+        </div>
+        <div class="row fixed-bottom modal-footer" style="background-color: rgba(226, 226, 226, 0.9);">
+            <div class="col-12 text-center">
+                <p>Сайт создан by Kostya</p>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
